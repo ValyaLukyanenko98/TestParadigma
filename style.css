@@ -1,0 +1,351 @@
+/*общие свойства*/
+::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    color: #282828;
+    font-family: 'MuseoSansCyrl', sans-serif;
+    font-size: 16px;
+    max-width: 1920px;
+    margin: auto;
+    background: url("photo/fon.png") no-repeat;
+    background-size: cover;
+}
+header, nav, .contacts{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.block{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+button{
+    cursor: pointer;
+}
+button:focus, a:focus, input:focus, select:focus {
+    outline: none;
+}
+.modalWrapper {
+    position: relative;
+    z-index: 1000;
+}
+.cardOpen{
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+/*шапка*/
+header{
+    padding: 0 10.15vw;
+    margin: 0.78vw 1.39vh;
+}
+.name{
+    font-size: 14px;
+}
+.map>div{
+    float: right;
+}
+.lookMap{
+    color: #ff6078;
+    font-size: 12px;
+}
+.call{
+    font-size: 1.25vw;
+}
+.call>p:first-child{
+    font-size: 12px;
+    margin: 0;
+}
+.call>p:last-child{
+    font-size: 16px;
+    margin: 0;
+}
+.signIn{
+    background-color: rgb(254, 252, 251);
+    border-radius: 30px;
+    width: 11.92vw;
+    height: 5.74vh;
+    border: none;
+    box-shadow: 0 -3px rgb(243, 240, 238) inset;
+    font-size: 0.78vw;
+}
+/*меню*/
+nav{
+    background-color: #ffffff;
+    margin: 0 9.37vw 10.92vh 9.37vw;
+    border-radius: 5px;
+    height: 5.56vh;
+    box-shadow: 0 -5px rgba(243, 244, 243, 0.9) inset;
+}
+nav>a{
+    color:#282828;
+    text-decoration: none;
+    font-size: 0.78vw;
+}
+nav>a:first-child{
+    padding-left: 1.875vw;
+}
+nav>a:last-child{
+    padding-right: 1.875vw;
+}
+ul{
+     padding: 0 0 4.623vh 0;
+}
+li{
+    line-height: 180%;
+    font-size: 18px;
+    list-style-type: none;
+}
+li:before {
+    font-weight: 800;
+    color: #ef9499;
+    content: "•";
+    padding-right: 1.04vw;
+}
+.openNavСontainer{
+    display: none;
+}
+/*основная информация*/
+section{
+    margin: 0 15.652vw;
+    position: absolute;
+}
+.slogan{
+    font-size: 2.5vw;
+}
+.slogan>p{
+    margin: 0 0 3.7vw 0;
+}
+.card{
+    color: #ffffff;
+    background: -webkit-linear-gradient( 90deg, rgb(238,133,140) 0%, rgb(244,161,164) 55%, rgb(250,188,188) 98%);;
+    box-shadow: 0 -5px rgb(215, 116, 122) inset;
+    width: 367px;
+    height: 76px;
+    border-radius: 43px;
+    border: none;
+    position: absolute;
+    font-size: 14px;
+    padding-right: 150px;
+    margin-bottom: 9.3vh;
+}
+.info{
+    padding-left: 120px;
+    position: static;
+    right: 500px;
+    top: 0;
+}
+.info>img{
+    position: relative;
+    z-index: 10;
+}
+.buttonInfo{
+    font-family: 'Leckerli One', cursive;
+    font-size: 20px;
+    background: -webkit-linear-gradient( 90deg, rgb(238,133,140) 0%, rgb(244,161,164) 55%, rgb(250,188,188) 98%);;
+    box-shadow: 0 -3px rgb(215, 116, 122) inset;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    position: relative;
+    z-index: 100;
+    top: -20px;
+}
+.flower{
+    position: relative;
+    left: 220px;
+    bottom: 0;
+}
+/*всплытие подсказки*/
+.popUpInfo{
+    background:white;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 20px;
+    display: none;
+    position: relative;
+    border-radius: 100px/50px;
+    z-index: 50;
+    top: -237px;
+    right: -173px;
+}
+/*всплытие программы обучения */
+.wrapper{
+    position:fixed;
+    top:0;
+    left: 0;
+    display:none;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.7);
+    z-index:100;
+    padding: 0;
+}
+.contentWindow{
+    position: absolute;
+    z-index: 1000;
+    width: 39vw;
+    height: 68.5vh;
+    background-color: #fdf7f4;
+    border-radius: 50px;
+    text-align: center;
+    left:30%;
+    top:15%;
+    display: none;
+}
+.close{
+    border: none;
+    color:#989797;
+    font-size: 20px;
+    background: transparent;
+}
+.trainingWindow{
+    position: absolute;
+    padding: 2.78vh  0  0 17.19vw;
+}
+.bookWindow{
+    position: absolute;
+    top:17.87vh;
+    right: 32vw;
+}
+.contentWindow>select, .contentWindow>input, .buttonProgram>button {
+    border: solid 1px rgb(251, 238, 239);
+    background-color: rgb(255, 255, 255);
+    width: 23.6vw;
+    height: 7.22vh;
+    border-radius: 50px;
+    color: #989797;
+    margin-top: 1.58vh;
+    padding: 0 2.34vw;
+    font-size: 0.94vw;
+}
+.contentWindow>select{
+    width: 28.6vw;
+}
+.contentWindow>h2{
+    padding-top: 6.85vh;
+    font-size: 1.875vw;
+}
+.contentWindow>p {
+    font-size: 0.84vw;
+}
+.buttonProgram>button {
+    background: -webkit-linear-gradient( 90deg, rgb(238,133,140) 0%, rgb(244,161,164) 55%, rgb(250,188,188) 98%);
+    box-shadow: 0 -3px rgb(215, 116, 122) inset;
+    width: 28.6vw;
+    color: white;
+}
+.buttonProgram{
+    position: relative;
+}
+.program{
+    position: relative;
+    left: 10.4vw;
+    bottom: 6.5vh;
+}
+/*заявка принята окно*/
+.orderHandling{
+    position: relative;
+    z-index: 1000;
+    border-radius: 50px;
+    text-align: center;
+    width: 26.77vw;
+    height: 31vh;
+    background-color: #fdf7f4;
+    font-size: 1.56vw;
+    left:36%;
+    top:15%;
+    display: none;
+}
+.executionWindow{
+    position: absolute;
+    padding: 2.78vh  0  0 12.19vw;
+}
+.tick{
+    border: solid 2px rgb(243, 155, 159);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    color: rgb(244, 166, 169);
+    font-weight: 800;
+    font-size: 20px;
+    background: transparent;
+    margin-top: 7.4vh;
+}
+.orderHandling>img{
+    position: absolute;
+    top: 6vw;
+    right: 0;
+}
+@font-face {
+    font-family: "MuseoSansCyrl";
+    src: url("font/MUSEOSANSCYRL_1.OTF") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@media (max-width: 1400px) {
+    .signIn{
+        margin-left: auto;
+    }
+    nav{
+        margin-bottom: 6vh;
+    }
+    .slogan>p{
+        margin-bottom: 1.7vw;
+    }
+}
+@media (max-width: 1000px) {
+    body{
+        background: url("photo/fon1.png") repeat;
+        font-size: 20px;
+    }
+    .name{
+        display: none;
+    }
+    .signIn{
+        display: none;
+    }
+    .logo{
+        width: 100%;
+    }
+    .info{
+        display: none;
+    }
+    .slogan{
+        font-size: 56px;
+    }
+    li{
+        font-size: 30px;
+    }
+    nav{
+        flex-direction: column;
+        height: auto;
+        background:transparent;
+        margin-bottom: 10px;
+        display: none;
+    }
+    nav>a{
+        font-size: 30px;
+    }
+    .openNavСontainer{
+        margin-left: 33vw;
+        display: block;
+    }
+    .openNav{
+        color: #ffffff;
+        background: -webkit-linear-gradient( 90deg, rgb(238,133,140) 0%, rgb(244,161,164) 55%, rgb(250,188,188) 98%);;
+        box-shadow: 0 -5px rgb(215, 116, 122) inset;
+        width: 367px;
+        height: 76px;
+        border-radius: 43px;
+        border: none;
+        font-size: 40px;
+    }
+}

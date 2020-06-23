@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="modalWrapper" class="modalWrapper">
+<header>
+    <div id="logo" class="logo"><img src="photo/logo.png" height="126" width="280"/></div>
+    <div>
+        <p id = "headerName" class="name">Студия депиляции и<br>
+            массажный кабинет<br>
+            в Бресте</p>
+    </div>
+    <div class="map">
+        <img src="photo/mapImage%20.png" height="108" width="108"/>
+        <div>
+            <p><b>Мы находимся</b> в центре:<br>
+                г. Брест, ул. Гоголя, д.65</p>
+            <a href="#" class="lookMap" id="lookMap">СМОТРЕТЬ НА КАРТЕ</a>
+        </div>
+        <div id="cardOpen" class="cardOpen">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.2513238163738!2d23.696079115987505!3d52.09335747551135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bfa0846eda1%3A0x9d8826f6a26a2b91!2z0YPQuy4g0JPQvtCz0L7Qu9GPIDY1LCDQkdGA0LXRgdGCLCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sru!4v1592813430259!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    <div class="contacts">
+        <div>
+            <img src="photo/phon.png" height="65" width="65"/><br>
+            <img src="photo/time.png" height="65" width="65"/>
+        </div>
+        <div class="call">
+            <p>Звоните, мы сейчас работаем</p>
+            <b>+375 33 382 24 99</b></p>
+            <p>Пн-Вс <b>9:00-21:00</b></p>
+        </div>
+    </div>
+    <button id="signIn" class="signIn" id=""><img src="photo/data.png" height="20" width="20"/> Записаться онлайн</button>
+</header>
+<nav id="nav">
+    <a href="#">Главная</a>
+    <a href="#">Шугаринг и депиляция воском</a>
+    <a href="#">Антицеллюлитный массаж  </a>
+    <a href="#">Классический массаж </a>
+    <a href="#">Обучение</a>
+    <a href="#">Косметика для мастеров</a>
+    <a href="#">Статьи</a>
+    <a href="#">О студии</a>
+    <a href="#">Контакты</a>
+</nav>
+    <div id="openNav" class="openNavСontainer"><button  class="openNav">Меню</button></div>
+<section>
+    <div class="slogan">
+        <p>Хотите избавиться от<br>
+            <b>нежелательных волос</b><br>
+            или нужен сеанс<br>
+            <b>антицеллюлитного массажа?</b></p>
+    </div>
+    <div class="block">
+    <div>
+        <ul>
+            <li>депиляция воском и Шугаринг;</li>
+            <li>профессиональные сертифицированные мастера;</li>
+            <li>работаем и с женщинами, и с мужчинами;</li>
+            <li>результат уже после первой процедуры.</li>
+        </ul>
+        <button id="receiveCardButton" class="card">ПОЛУЧИТЬ КАРТУ<br><b>КЛИЕНТА БЕСПЛАТНО</b></button>
+        <img class="flower" src="photo/card.png" height="70" width="209"/>
+    </div>
+    <div class="info">
+        <img  src="photo/info.png" height="236" width="176"/>
+        <button class="buttonInfo" id="buttonInfo">i</button>
+        <p class="popUpInfo" id="popUpInfo">
+            Lorem ipsumbr<br>
+            dolor sit amet,<br>
+            consectetur<br>
+            adipisicing elit,<br>
+            sed do eiusmod<br>
+            tempor<br>
+            incididunt ut<br>
+            labore et dolore<br>
+            magna aliqua.
+        </p>
+    </div>
+        <div></div>
+    </div>
+</section>
+<div class="wrapper" id="wrapper">
+<div id="contentWindow" class="contentWindow">
+    <button id="closeTrainingWindow" class="close trainingWindow">x</button>
+    <img class="bookWindow" src="photo/bookWindow.png" height="386" width="263"/>
+    <h2>Получите программу обучения</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br>
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+    <select>
+        <option>Повышение квалификации</option>
+        <option>Стартовое обучение</option>
+    </select><br>
+    <input id = "name" type="text" value="Ваше имя"><br>
+    <input id = "phone" type="tel" name="phone_number" value="Ваш номер телефона" placeholder="+7 (900) 123-45-67" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"></p>
+    <div class="buttonProgram">
+        <button id="getProgram">ПОЛУЧИТЬ ПРОГРАММУ</button>
+        <img  class="program" src="photo/program.png" height="52" width="199"/>
+    </div>
+</div>
+</div>
+    <div id="orderHandling" class="orderHandling">
+        <button id="closeExecutionWindow" class="close executionWindow">x</button>
+        <button class="tick">✓</button>
+        <h3>
+            Ваш заказ принят.<br>
+            Ожидайте звонка
+        </h3>
+        <img src="photo/petal.png" height="164" width="81"/>
+    </div>
+</div>
+<script src="code.js"></script>
+</body>
+</html>
